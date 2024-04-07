@@ -112,22 +112,22 @@
                 <input type="text" id="searchbar" spellcheck="false" placeholder="Enter city">
             </div>
             <div id="seach-bg">
-                <img src="/WEATHER APP/IMAGE/search.png" alt="" id="seach-icon" >
+                <img src="search.png" alt="" id="seach-icon" >
             </div>
         </div>
         <div class="weather-details">
-            <img src="/WEATHER APP/IMAGE/clear.png" alt="" id="weather">
+            <img src="clear.png" alt="" id="weather">
             <h2 id="temp">0°C</h2>
             <h2 id="city">City</h2>
         </div>
         <div class="details">
             <div id="humidity" class="details-des">
-                <img src="/WEATHER APP/IMAGE/humidity.png" alt="" class="img-details">
+                <img src="humidity.png" alt="" class="img-details">
                 <p id="humidity-per">00%</p>
                 <p>humidity</p>
             </div>
             <div id="wind-speed" class="details-des">
-                <img src="/WEATHER APP/IMAGE/wind.png" alt="" class="img-details">
+                <img src="wind.png" alt="" class="img-details">
                 <p id="speed">0 Km/h</p>
             </div>
         </div>
@@ -155,23 +155,23 @@
         //update images
         const weatherIcon = document.querySelector("#weather");
         if(data.weather[0].main == "Clouds"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/clouds.png"
+            weatherIcon.src = "clouds.png"
 
         }
         else if(data.weather[0].main == "Clear"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/clear.png"
+            weatherIcon.src = "clear.png"
         }
         else if(data.weather[0].main == "Drizzle"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/drizzle.png"
+            weatherIcon.src = "drizzle.png"
         }
         else if(data.weather[0].main == "Mist"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/mist.png"
+            weatherIcon.src = "mist.png"
         }
         else if(data.weather[0].main == "Rain"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/rain.png"
+            weatherIcon.src = "rain.png"
         }
         else if(data.weather[0].main == "Snow"){
-            weatherIcon.src = "/WEATHER APP/IMAGE/snow.png"
+            weatherIcon.src = "snow.png"
         }
 
     }
